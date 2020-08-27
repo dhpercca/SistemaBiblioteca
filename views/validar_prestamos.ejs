@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link href='../css/materialize.min.css' rel='stylesheet'>
+    <link href='../css/style.css' rel='stylesheet'>
+    <link href='../css/model.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="top_menu">
+                <div class="logo">SISTEMA DE BIBLIOTECA</div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slidebar">
+            <ul>
+                <li class="submenu"><a href="#">
+                    <span class="icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                        
+                    </span>
+                    <span class="title">Gestionar Libros</span> <span class="caret fas fa-angle-down"></span>
+                </a>
+                <ul class="children">
+                    <li><a href="../sistema_biblioteca/registrar_libro"><span class="icon">
+                        <i class="fas fa-swatchbook" aria-hidden="true"></i>
+                    </span>Registar libros </a></li>
+                    <li><a href="../sistema_biblioteca/validar_prestamos"><span class="icon">
+                        <i class="fas fa-address-card"></i>
+                    </span>Validar Prestamo</a></li>
+                </ul>
+            </li>
+                <li><a href="">
+                    <span class="icon">
+                        <i class="fas fa-book-reader" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Prestamos</span>
+
+                </a></li>
+                
+                <li><a href="">
+                    <span class="icon">
+                        <i class="as fas fa-file-alt" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Reportes</span>
+
+                </a></li>
+                <li><a href="">
+                    <span class="icon">
+                        <i class="as fas fa-user-tie" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Administracion</span>
+
+                </a></li>
+            </ul>
+        </div>
+        <div class="main_container">
+            <div class="item">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Nombres</label>
+                    </div>
+                    <div class="col s4">
+                        <a class="waves-effect waves-light btn">Buscar</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <table class="centered">
+                    <thead>
+                      <tr>
+                          <th>ID</th>
+                          <th>Usuario</th>
+                          <th>F. del Prestamo</th>
+                          <th>F. de Entrega</th>
+                          <th>Cantidad</th>
+                          <th>Libro</th>
+                          <th>Accion</th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Juan Perez</td>
+                        <td>2020-08-09</td>
+                        <td>2020-08-10</td>
+                        <td>1</td>
+                        <td>Trilce</td>
+                        <td><a class="waves-effect red btn">Quitar</a> <a class="waves-effect green btn">Validar</a></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                
+            </div>
+        
+        
+    </div>
+    
+</body>
+    
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/validar_prestamos.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/materialize.min.js"></script>
+
+
+</html>

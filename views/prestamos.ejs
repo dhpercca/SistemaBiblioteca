@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos</title>
+    <link href='../css/materialize.min.css' rel='stylesheet'>
+    <link href='../css/style.css' rel='stylesheet'>
+    
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="top_menu">
+                <div class="logo">SISTEMA DE BIBLIOTECA</div>
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slidebar">
+            <ul>
+                <li class="submenu"><a href="#">
+                    <span class="icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                        
+                    </span>
+                    <span class="title">Gestionar Libros</span> <span class="caret fas fa-angle-down"></span>
+                </a>
+                <ul class="children">
+                    <li><a href="../sistema_biblioteca/registrar_libro"><span class="icon">
+                        <i class="fas fa-swatchbook" aria-hidden="true"></i>
+                    </span>Registar libros </a></li>
+                    <li><a href="../sistema_biblioteca/validar_prestamos"><span class="icon">
+                        <i class="fas fa-address-card"></i>
+                    </span>Validar Prestamo</a></li>
+                </ul>
+            </li>
+                <li><a href="">
+                    <span class="icon">
+                        <i class="fas fa-book-reader" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Prestamos</span>
+
+                </a></li>
+                
+                <li><a href="">
+                    <span class="icon">
+                        <i class="as fas fa-file-alt" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Reportes</span>
+
+                </a></li>
+                <li><a href="">
+                    <span class="icon">
+                        <i class="as fas fa-user-tie" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Administracion</span>
+
+                </a></li>
+            </ul>
+        </div>
+        <div class="main_container">
+            <div class="item1">
+                <span class="sub_title">SOLICITUD DE PRESTAMO</span>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="input-field col s3">
+                        <select>
+                          
+                          <option value="1">Juan Perez</option>
+                          
+                        </select>
+                        
+                      </div>
+                    <div class="input-field col s3">
+                        <input id="fecha_prestamo" type="date" class="validate">
+                        <label for="fecha_prestamo">Fecha de prestamo</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="fecha_entrega" type="date" class="validate">
+                        <label for="fecha_entrega">Fecha de entrega</label>
+                    </div>
+
+                    <div class="col s3">
+                        <a class="waves-effect waves-light btn">agregar</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <input id="cantidad" type="number" class="validate">
+                        <label for="cantidad">Cantidad</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input id="prest" type="text" class="validate">
+                        <label for="prest">Codigo del prestamo</label>
+                        
+                    </div>
+                    <div class="col s3">
+                        <select>
+                          
+                            <option value="1">Words</option>
+                            
+                          </select>
+                    
+                    </div>
+                    <div class="col s3">
+                        <a class="purple lighten-3 btn">Guardar</a>
+                    </div>
+
+                </div>
+            </div>
+        
+        
+    </div>
+    
+</body>
+    
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/prestamos.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="../js/materialize.min.js"></script>
+
+
+</html>
